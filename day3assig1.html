@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console functions</title>
+</head>
+<body>
+    <script>
+    console.log('console.log displays anything written within the single qoutes');
+    console.log('abc');  
+console.log(1); 
+console.log(true); 
+console.log(null); 
+console.log(undefined);  
+console.log([1, 2, 3, 4]); // array inside log 
+console.log({a:1, b:2, c:3}); // object inside log 
+console.error('console.error is used to log error message to the console. Useful in testing of code. By default the error message will be highlighted with red color.'); 
+console.error('This is a simple error'); 
+console.warn('console.warn is used to log warning message to the console. By default the warning message will be highlighted with yellow color.');
+console.warn('This is a warning.');
+console.log('console.clear clears all the mentioned console function outputs cant be displayed because it cleares everything leaving behind "Console was cleared"'); 
+console.log('it can be written as "console.clear()"');
+console.log('Whenever we want to know the amount of time spend by a block or a function, we can make use of the time() and timeEnd() methods provided by the javascript console object. They take a label which must be same, and the code inside can be anything( function, object, simple console).')
+// console.time() and console.timeEnd() method  
+console.time('abc'); 
+ let fun =  function(){ 
+     console.log('fun is running'); 
+ } 
+ let fun2 = function(){ 
+     console.log('fun2 is running..'); 
+ } 
+ fun(); // calling fun(); 
+ fun2(); // calling fun2(); 
+console.timeEnd('abc'); 
+console.log('This method allows us to generate a table inside a console. The input must be an array or an object which will be shown in a tabular format');
+// console.table() method 
+console.table({'a':1, 'b':2});
+
+console.log(' console.count() method is used to count the number that the function hit by this counting method.');
+// console.count() method 
+for(let i=0;i<5;i++){ 
+    console.count(i); 
+} 
+
+
+</script>
+</body>
+</html>
